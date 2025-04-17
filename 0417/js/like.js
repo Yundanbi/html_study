@@ -1,6 +1,8 @@
 const getLikeList = async () => {
   try {
-    const response = await fetch("./json/like.json");
+    const response = await fetch(
+      "https://yundanbi.github.io/html_study/0417/json/like.json"
+    );
     if (!response.ok) throw new Error("데이터를 불러오는 데 실패했습니다.");
 
     const data = await response.json(); // 바로 배열
@@ -24,3 +26,7 @@ const getLikeList = async () => {
     console.error("오류 발생:", error);
   }
 };
+
+document.addEventListener("DOMContentLoaded", function () {
+  getLikeList();
+});
