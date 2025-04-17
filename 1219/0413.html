@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <style>
+    .box {
+      border: 1px solid black;
+      margin: 10px;
+      width: 200px;
+      height: 50px;
+    }
+  </style>
+</head>
+<body>
+  <h2>숫자를 받아서 짝수 값의 합을 구하시오.</h2>
+  <div class="box" id="nums">입력한 숫자:</div>
+  <div class="box" id="sum">짝수의 합:</div>
+
+  <script>
+    let num = prompt("숫자의 갯수", "0");
+    num = parseInt(num);
+
+    if (isNaN(num) || num <= 0) {
+      alert("숫자를 올바르게 입력하세요");
+    } else {
+      let sus = [];
+      let sum = 0;
+
+      for (let i = 0; i < num; i++) {
+        let input = prompt((i + 1) + "번째 숫자를 입력하세요:");
+        let n = Number(input);
+
+        
+        if (isNaN(n) || !Number.isInteger(n)) {
+          alert("정수만 입력 가능합니다.");
+          break;
+        }
+
+        sus.push(n);
+
+        if (n % 2 === 0) {
+          sum += n;
+        }
+      }
+
+      
+      let result = "";
+      for (let j = 0; j < sus.length; j++) {
+        result += sus[j];
+        if (j < sus.length - 1) {
+          result += ", ";  
+        }
+      }
+
+      
+      document.getElementById("nums").innerText = "받은숫자: " + result;
+      document.getElementById("sum").innerText = "짝수의 합: " + sum;
+    }
+  </script>
+
+</body>
+</html>

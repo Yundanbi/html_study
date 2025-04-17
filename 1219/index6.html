@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let choco = {
+            name : "",
+            age : 0,
+            say : function(name,age){
+                this.name = name;
+                this.age = age;
+                document.write(this.name+this.age);
+            }
+        }
+        let st = choco.say("딸기",12000);
+
+        </script>
+</body>
+</html>
