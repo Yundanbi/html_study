@@ -9,8 +9,8 @@ const getCategoryList = async () => {
 
     if (data.length > 0) {
       for (let i = 0; i < data.length; i++) {
-        const key = `category_${i}`; // ← 요거!
-        const categories = data[i][key]; // ← 이렇게 접근!
+        const key = `category_${i}`;
+        const categories = data[i][key];
 
         let innerHtml = `
           <div id="product">
@@ -26,7 +26,6 @@ const getCategoryList = async () => {
             </div>
           `;
         }
-
         innerHtml += `
           </div>
         `;
