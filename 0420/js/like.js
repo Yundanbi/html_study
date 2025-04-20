@@ -14,7 +14,7 @@ const getLikeList = async () => {
             <a href="#">
               <img src="${data[i].image}" alt="신상품" 
                 data-default="${data[i].image}" 
-                data-hover="${data[i].hoverimg}" />
+                data-hover="${data[i].hoverimage}" />
               <ul>
                 <li>${data[i].name}</li>
                 <li>${data[i].price}</li>
@@ -22,6 +22,15 @@ const getLikeList = async () => {
             </a>
           </div>
         `);
+      }
+
+      const hoverSrc = $(this).data("hover");
+      if (hoverSrc) {
+        if (!hoverSrc.startsWith("img/")) {
+          $(this).attr("src", "img/" + hoverSrc.split("/").pop());
+        } else {
+          $(this).attr("src", hoverSrc);
+        }
       }
 
       // hover 이벤트 등록
