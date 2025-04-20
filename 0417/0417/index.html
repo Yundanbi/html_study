@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LFmal</title>
+    <link href="css/reset.css" rel="stylesheet" />
+    <link href="css/common.css" rel="stylesheet" />
+    <link href="css/main.css" rel="stylesheet" />
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.7.0.min.js"></script>
+    <script src="js/like.js"></script>
+    <script src="js/category.js"></script>
+  </head>
+
+  <body>
+    <header>
+      <div id="logo">
+        <img src="img/logo.svg" alt="logo" />
+      </div>
+
+      <div id="login">
+        <ul>
+          <li>
+            <a href="#"
+              ><img src="img/login4.png" alt="쇼핑백" /><span>쇼핑백</span></a
+            >
+          </li>
+          <li>
+            <a href="#"
+              ><img src="img/login3.png" alt="마이페이지" /><span
+                >마이페이지</span
+              ></a
+            >
+          </li>
+          <li>
+            <a href="#"
+              ><img src="img/login2.png" alt="회원가입" /><span
+                >회원가입</span
+              ></a
+            >
+          </li>
+          <li>
+            <a href="#"
+              ><img src="img/login1.png" alt="로그인" /><span>로그인</span></a
+            >
+          </li>
+        </ul>
+      </div>
+
+      <div id="search">
+        <input type="text" placeholder="검색어 입력" />
+        <img src="img/icon.png" alt="돋보기" />
+      </div>
+
+      <div id="menu">
+        <ul class="best">
+          <li><a href="#">브랜드</a></li>
+          <li><a href="#">여성</a></li>
+          <li><a href="#">남성</a></li>
+          <li><a href="#">잡화/슈즈</a></li>
+          <li><a href="#">베스트</a></li>
+          <li><a href="#">기획전/혜택</a></li>
+          <li><a href="#">골프/스포츠</a></li>
+          <li>
+            <a href="#">아울렛</a>
+            <ul class="sub">
+              <li><a href="#">여성의류</a></li>
+              <li><a href="#">남성의류</a></li>
+              <li><a href="#">가방/잡화</a></li>
+              <li><a href="#">슈즈</a></li>
+              <li><a href="#">스포츠</a></li>
+              <li><a href="#">명품</a></li>
+              <li><a href="#">골프</a></li>
+              <li><a href="#">리빙</a></li>
+              <li><a href="#">키즈</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+
+      <script>
+        $(function () {
+          $(".best > li").hover(
+            function () {
+              $(this).children(".sub").stop().slideDown();
+            },
+            function () {
+              $(this).children(".sub").stop().slideUp();
+            }
+          );
+        });
+      </script>
+    </header>
+
+    <div id="slider">
+      <ul class="sliderwrap">
+        <li>
+          <a href="sub.html"><img src="img/1.avif" alt="슬라이더 사진" /></a>
+        </li>
+        <li>
+          <a href="sub.html"><img src="img/2.avif" alt="슬라이더 사진" /></a>
+        </li>
+        <li>
+          <a href="sub.html"><img src="img/3.avif" alt="슬라이더 사진" /></a>
+        </li>
+        <li>
+          <a href="sub.html"><img src="img/4.avif" alt="슬라이더 사진" /></a>
+        </li>
+        <li>
+          <a href="sub.html"><img src="img/5.avif" alt="슬라이더 사진" /></a>
+        </li>
+      </ul>
+
+      <span class="prev">&lt;</span>
+      <span class="next">&gt;</span>
+    </div>
+
+    <script>
+      $(".prev").click(function () {
+        $(".sliderwrap li:last").prependTo(".sliderwrap");
+        $(".sliderwrap").css("margin-left", -3200);
+        $(".sliderwrap").stop().animate({ marginLeft: 0 }, 1000);
+      });
+
+      $(".next").click(function () {
+        $(".sliderwrap")
+          .stop()
+          .animate({ marginLeft: -3200 }, 1000, function () {
+            $(".sliderwrap li:first").appendTo(".sliderwrap");
+            $(".sliderwrap").css({ marginLeft: 0 });
+          });
+      });
+    </script>
+
+    <div class="category-list"></div>
+
+    <div id="brand">
+      <h2>오직, LF몰에서만</h2>
+      <ul>
+        <li>
+          <a href="sub.html">
+            <img src="img/img15.avif" alt="쇼핑백" />
+            <span>다가올 여름을 위한 플리츠</span>
+            <p>DAKS WOMEN</p>
+          </a>
+        </li>
+        <li>
+          <a href="sub.html">
+            <img src="img/img16.avif" alt="쇼핑백" />
+            <span>닥스 골프와 함께하는 봄</span>
+            <p>DAKS GOLF</p>
+          </a>
+        </li>
+        <li>
+          <a href="sub.html">
+            <img src="img/img17.avif" alt="쇼핑백" />
+            <span>모던 클래식의 새로운 기준</span>
+            <p>MAESTRO</p>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <div id="coupon_1">
+      <a href="#"><img src="img/c1.avif" alt="쿠폰" /></a>
+      <a href="#"><img src="img/c2.avif" alt="쿠폰" /></a>
+      <!-- 원래 div가 아니라 a로 수정 -->
+    </div>
+
+    <h2>주목할 브랜드</h2>
+
+    <div class="card-wrapper">
+      <div class="hyo">
+        <img src="img/h1.avif" alt="공효진" />
+      </div>
+      <div class="card-content">
+        <a href="sub.html" class="product-item">
+          <img src="img/h2.avif" alt="공효진" />
+          <span>nylon windbreaker jumper - navy</span>
+          <p>175,440원</p>
+        </a>
+        <a href="sub.html" class="product-item">
+          <img src="img/h3.avif" alt="공효진" />
+          <span>semi wide denim pants - indigo</span>
+          <p>107,440원</p>
+        </a>
+        <a href="sub.html" class="product-item">
+          <img src="img/h4.avif" alt="공효진" />
+          <span>leather utility half jacket - black</span>
+          <p>243,440원</p>
+        </a>
+      </div>
+    </div>
+
+    <div class="card-wrapper">
+      <div class="hyo">
+        <img src="img/h5.avif" alt="공효진" />
+      </div>
+      <div class="card-content">
+        <a href="#" class="product-item">
+          <img src="img/h6.avif" alt="공효진" />
+          <span>nylon windbreaker jumper - navy</span>
+          <p>175,440원</p>
+        </a>
+        <a href="#" class="product-item">
+          <img src="img/h7.avif" alt="공효진" />
+          <span>semi wide denim pants - indigo</span>
+          <p>107,440원</p>
+        </a>
+        <a href="#" class="product-item">
+          <img src="img/h8.avif" alt="공효진" />
+          <span>캐시미어 울 브이넥 니트 여성 가디건_3 Colors</span>
+          <p>99,540원</p>
+        </a>
+      </div>
+    </div>
+
+    <div id="coupon_2">
+      <a href="#"><img src="img/c3.avif" alt="쿠폰" /></a>
+    </div>
+
+    <div id="sinsang">
+      <h3>고객님이 좋아할 만한 상품</h3>
+      <div class="like-list"></div>
+    </div>
+    <h3>맞춤 브랜드</h3>
+
+    <div class="card-wrapper">
+      <div class="hyo">
+        <img src="img/h9.avif" alt="공효진" />
+      </div>
+      <div class="card-content">
+        <a href="#" class="product-item">
+          <img src="img/h10.avif" alt="공효진" />
+          <span>Scarf Draping Blouse - Blue</span>
+          <p>90,400원</p>
+        </a>
+        <a href="#" class="product-item">
+          <img src="img/h11.avif" alt="공효진" />
+          <span>Boat Neck Multi Stripe Long Sleeve - Multi</span>
+          <p>49,380원</p>
+        </a>
+        <a href="#" class="product-item">
+          <img src="img/h12.avif" alt="공효진" />
+          <span>H Line See-through Long Skirt - Ivory</span>
+          <p>98,770원</p>
+        </a>
+      </div>
+    </div>
+
+    <div class="card-wrapper">
+      <div class="hyo">
+        <img src="img/h13.avif" alt="공효진" />
+      </div>
+      <div class="card-content">
+        <a href="#" class="product-item">
+          <img src="img/h14.avif" alt="공효진" />
+          <span>[BEST패턴][뜨왈드주이] 네이비 패턴 헤어밴드</span>
+          <p>52,020원</p>
+        </a>
+        <a href="#" class="product-item">
+          <img src="img/h15.avif" alt="공효진" />
+          <span>[25SS][H.toile] 오간자 네이비 패턴 버킷햇</span>
+          <p>100,890원</p>
+        </a>
+        <a href="#" class="product-item">
+          <img src="img/h16.avif" alt="공효진" />
+          <span
+            >[뜨왈드주이][H.Toile] H 뜨왈 그레이 코티드 캔버스 토트겸 숄더백
+            M</span
+          >
+          <p>197,370원</p>
+        </a>
+      </div>
+    </div>
+
+    <div class="card-wrapper">
+      <div class="hyo">
+        <img src="img/h17.avif" alt="공효진" />
+      </div>
+      <div class="card-content">
+        <a href="#" class="product-item">
+          <img src="img/h18.avif" alt="공효진" />
+          <span>보테가베네타 여성 리도 샌들 핑크 608853 VBSS0 5071 STK</span>
+          <p>52,020원</p>
+        </a>
+        <a href="#" class="product-item">
+          <img src="img/h19.avif" alt="공효진" />
+          <span>[25SS][H.toile] 오간자 네이비 패턴 버킷햇</span>
+          <p>100,890원</p>
+        </a>
+        <a href="#" class="product-item">
+          <img src="img/h20.avif" alt="공효진" />
+          <span
+            >[뜨왈드주이][H.Toile] H 뜨왈 그레이 코티드 캔버스 토트겸 숄더백
+            M</span
+          >
+          <p>197,370원</p>
+        </a>
+      </div>
+    </div>
+
+    <footer>
+      <div id="footerbox">
+        <ul>
+          <li>고객서비스센터</li>
+          <li>1544-5114</li>
+          <li>상담시간 : 월~금 9:00~18:00 (주말, 공휴일 휴무)</li>
+          <li>1:1상담</li>
+          <li>고객제안</li>
+        </ul>
+      </div>
+
+      <div id="footerbox">
+        <ul>
+          <li><a href="#">CUSTOMER SERVICE</a></li>
+          <li><a href="#">회원가입</a></li>
+          <li><a href="#">AS</a></li>
+          <li><a href="#">배송/교환/반품</a></li>
+          <li><a href="#">쿠폰</a></li>
+          <li><a href="#">1:1상담</a></li>
+          <li><a href="#">마일리지</a></li>
+          <li><a href="#">상품권 구매</a></li>
+        </ul>
+      </div>
+
+      <div id="footerbox">
+        <ul>
+          <li><a href="#">NEWS (고객 공지사항)</a></li>
+          <li><a href="#">[공지] LFmall 회원등급 혜택 변경 사전 안내</a></li>
+          <li><a href="#">[공지] LFmall 사칭 및 스미싱 피해 주의 안내</a></li>
+          <li>
+            <a href="#"
+              >[공지] 산불로 인한 택배 배송 불가/지연 지역 배송 정상화 안내</a
+            >
+          </li>
+          <li>
+            <a href="#"
+              >[공지] 개인정보처리방침 개정 안내 (2025년 3월 20일 시행)</a
+            >
+          </li>
+          <li><a href="#">[공지] 실시간 항공 예약 서비스 운영 종료 안내</a></li>
+        </ul>
+      </div>
+
+      <div id="footerbox">
+        <a href="#"><img src="img/lficon.avif" alt="앱다운로드" /></a>
+      </div>
+    </footer>
+  </body>
+</html>
