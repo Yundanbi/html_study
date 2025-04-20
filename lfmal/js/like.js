@@ -1,7 +1,7 @@
 const getLikeList = async () => {
   try {
     const response = await fetch(
-      "https://yundanbi.github.io/html_study/0420/json/like.json"
+      "https://yundanbi.github.io/html_study/lfmal/json/like.json"
     );
     if (!response.ok) throw new Error("데이터를 불러오는 데 실패했습니다.");
 
