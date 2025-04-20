@@ -1,0 +1,51 @@
+[
+  {
+    "image": "img/b1.avif",
+    "hoverimage": "img/b1_over.avif",
+    "name": "네이비 여성 린넨라이크 와이드 팬츠",
+    "price": "121,020원"
+  },
+  {
+    "image": "img/b2.avif",
+    "hoverimage": "img/b2_over.avif",
+    "name": "베이지 여성 샌들",
+    "price": "220,320원"
+  },
+
+  {
+    "image": "img/b3.avif",
+    "hoverimage": "img/b3_over.avif",
+    "name": "블랙 나일론 백팩",
+    "price": "98,200원"
+  },
+  {
+    "image": "img/b4.avif",
+    "hoverimage": "img/b4_over.avif",
+    "name": "블랙 남성 듀얼무브 팬츠",
+    "price": "121,020원"
+  },
+  {
+    "image": "img/b5.avif",
+    "hoverimage": "img/b5_over.avif",
+    "name": "에센셜 스트라이프 모달 반팔 티셔츠 딥블루",
+    "price": "80,190원"
+  },
+  {
+    "image": "img/b6.avif",
+    "hoverimage": "img/b6_over.avif",
+    "name": "아이보리 스트라이프 케이블 니트 숄더백 M",
+    "price": "127,980원"
+  },
+  {
+    "image": "img/b7.avif",
+    "hoverimage": "img/b7_over.avif",
+    "name": "에센셜 카라 반팔 니트 블랙",
+    "price": "35,100원"
+  },
+  {
+    "image": "img/b8.avif",
+    "hoverimage": "img/b8_over.avif",
+    "name": "린넨 깅엄 셔츠 퍼플",
+    "price": "169,290원"
+  }
+]
