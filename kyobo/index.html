@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="css/main.css" rel="stylesheet" />
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.7.0.min.js"></script>
+    <script src="js/hangang.js"></script>
+    <script src="js/best.js"></script>
+    <script src="js/md_recommed.js"></script>
+    <script src="js/ai_recommed.js"></script>
+    <script src="js/kyobo_best.js"></script>
+    <script src="js/kyobo_best1.js"></script>
+    <script src="js/peoples.js"></script>
+    <script src="js/limitation.js"></script>
+    <script src="js/kyobo_made.js"></script>
+    <script src="js/kyobo_pod.js"></script>
+
+    <title>Kyobo</title>
+  </head>
+  <body>
+    <div id="top-banner">
+      <div class="banner-left"></div>
+      <div class="banner-right">
+        <a href="#">회원가입</a> | <a href="#">로그인</a> |
+        <a href="#">회원혜택 ▼</a> | <a href="#">주문배송</a> |
+        <a href="#">매장안내</a> | <a href="#">고객센터</a>
+      </div>
+    </div>
+
+    <nav id="main-top-menu">
+      <ul>
+        <li><a class="kyobo" href="#">교보문고</a></li>
+        <li><a class="ebook" href="#">eBook</a></li>
+        <li><a class="sam" href="#">sam</a></li>
+        <li><a class="hottracks" href="#">핫트랙스</a></li>
+        <li><a href="#">스토리</a></li>
+        <li><a href="#">브랜드 더보기 ▼</a></li>
+      </ul>
+    </nav>
+
+    <div id="main-header">
+      <div class="logo">
+        <a href="#"><img src="img/logo_book.svg" alt="로고" /></a>
+      </div>
+
+      <div class="search-box">
+        <input type="text" placeholder="거대한 속임수와 의외의 진실" />
+        <button><img src="img/serch_img.png" alt="검색" /></button>
+      </div>
+
+      <div class="icons">
+        <div class="benefit">이번주 혜택 UP!</div>
+        <div class="cart">🛒</div>
+        <div class="user">👤</div>
+      </div>
+    </div>
+
+    <div id="menu">
+      <ul>
+        <li><a class="green" href="#">책의날특집</a></li>
+        <li><a class="green" href="#">한강산문집</a></li>
+        <li><a href="#">베스트</a></li>
+        <li><a href="#">신상품</a></li>
+        <li><a href="#">이벤트</a></li>
+        <li><a href="#">바로펀딩</a></li>
+        <li><a href="#">PICKS</a></li>
+        <li><a href="#">CASTING</a></li>
+        <li><a href="#">컬처라운지</a></li>
+      </ul>
+    </div>
+
+    <div id="main_wrap">
+      <div id="slider">
+        <ul class="sliderwrap">
+          <li>
+            <a href="#"><img src="img/slider1.jpg" alt="슬라이더1" /></a>
+          </li>
+          <li>
+            <a href="#"><img src="img/slider2.jpg" alt="슬라이더2" /></a>
+          </li>
+          <li>
+            <a href="#"><img src="img/slider3.jpg" alt="슬라이더3" /></a>
+          </li>
+          <li>
+            <a href="#"><img src="img/slider4.jpg" alt="슬라이더4" /></a>
+          </li>
+          <li>
+            <a href="#"><img src="img/slider5.jpg" alt="슬라이더5" /></a>
+          </li>
+        </ul>
+      </div>
+
+      <div id="sale">
+        <ul class="sale-list">
+          <li class="sale-item">
+            <img src="img/sale1.jpg" alt="오늘만 특가" />
+            <div class="sale-text">
+              <h2>오늘만 특가<br />노르잇 높이조절 독서대</h2>
+              <p>오늘만 이 가격 26,900원!</p>
+            </div>
+          </li>
+          <li class="sale-item">
+            <img src="img/sale2.jpg" alt="스테들러 샤프" />
+            <div class="sale-text">
+              <h2>오늘만 특가<br />스테들러 770 제도샤프</h2>
+              <p>오늘만 이 가격 13,800원!</p>
+            </div>
+          </li>
+          <li class="sale-item">
+            <img src="img/sale3.jpg" alt="카네이션 트로피" />
+            <div class="sale-text">
+              <h2>오늘만 특가<br />카네이션 트로피 용돈박스</h2>
+              <p>오늘만 이 가격 15,300원!</p>
+            </div>
+          </li>
+        </ul>
+
+        <div class="sale-buttons">
+          <button id="prev">←</button>
+          <span id="page-indicator">01 - 03</span>
+          <button id="next">→</button>
+        </div>
+      </div>
+    </div>
+
+    <div id="mini_mission_wrap">
+      <div id="mini_menu">
+        <ul>
+          <li>
+            <a href="#"
+              ><img src="img/mini_menu1.svg" alt="미니메뉴" />할인혜택</a
+            >
+          </li>
+          <li>
+            <a href="#"
+              ><img src="img/mini_menu2.svg" alt="미니메뉴" />오늘만특가</a
+            >
+          </li>
+          <li>
+            <a href="#"
+              ><img src="img/mini_menu3.svg" alt="미니메뉴" />책그리고꽃</a
+            >
+          </li>
+          <li>
+            <a href="#"
+              ><img src="img/mini_menu4.svg" alt="미니메뉴" />음반/영상</a
+            >
+          </li>
+          <li>
+            <a href="#"
+              ><img src="img/mini_menu5.svg" alt="미니메뉴" />바로출판</a
+            >
+          </li>
+          <li>
+            <a href="#"
+              ><img src="img/mini_menu6.svg" alt="미니메뉴" />이달의 책</a
+            >
+          </li>
+          <li>
+            <a href="#"
+              ><img src="img/mini_menu7.svg" alt="미니메뉴" />손글씨캠페인</a
+            >
+          </li>
+          <li>
+            <a href="#"
+              ><img src="img/mini_menu8.svg" alt="미니메뉴" />사은품</a
+            >
+          </li>
+          <li>
+            <a href="#"><img src="img/mini_menu9.svg" alt="미니메뉴" />추천</a>
+          </li>
+          <li>
+            <a href="#"
+              ><img src="img/mini_menu10.svg" alt="미니메뉴" />APP혜택</a
+            >
+          </li>
+        </ul>
+      </div>
+
+      <div id="today_mission">
+        <a href="#"><img src="img/ad1.jpg" alt="광고" /></a>
+      </div>
+    </div>
+
+    <div id="today_choice">
+      <h2>오늘의 선택</h2>
+      <ul>
+        <li><a href="#">국내도서</a></li>
+        <li>|</li>
+        <li><a href="#">외국도서</a></li>
+        <li>|</li>
+        <li><a href="#">eBook</a></li>
+        <li>|</li>
+        <li><a href="#">sam</a></li>
+        <li>|</li>
+        <li><a href="#">핫트랙스</a></li>
+        <li>|</li>
+        <li><a href="#">교보only</a></li>
+      </ul>
+    </div>
+
+    <div id="the_gravity">
+      <div id="book1">
+        <a class="gravity" href="#"
+          ><img src="img/gravity.jpg" alt="중력책사진"
+        /></a>
+        <ul>
+          <p>수학의 중력</p>
+          <li>
+            <a class="blue" href="#">중력과 시공간을 이해하기 위한 모든 수학</a>
+          </li>
+          <li>
+            필즈상 수상자 야우싱퉁이 일반상대성이론의 발전사를 따라갑니다.<br />아인슈타인부터
+            현대까지 물리학과 함께한 수학의 서사!
+          </li>
+        </ul>
+        <a class="think" href="#"><img src="img/book1_1.jpg" alt="book1" /></a>
+        <a class="think" href="#"><img src="img/book1_2.jpg" alt="book1" /></a>
+        <a class="think" href="#"><img src="img/book1_3.jpg" alt="book1" /></a>
+      </div>
+    </div>
+
+    <div id="AD">
+      <a href="#"><img src="img/ad2.png" alt="광고" /></a>
+      <a href="#"><img src="img/ad3.png" alt="광고" /></a>
+    </div>
+
+    <div id="hangang">
+      <h2>한강 신문집이 곧 출간돼요</h2>
+    </div>
+    <div id="book-list"></div>
+
+    <div id="recommend">
+      <h2>출판사에서 자신있게 추천해요</h2>
+    </div>
+    <div id="recommend-list"></div>
+
+    <div id="md">
+      <h2>MD들이 신중하게 골랐어요</h2>
+      <ul>
+        <li><a class="blue" href="#">국내도서</a></li>
+        <li>|</li>
+        <li><a href="#">외국도서</a></li>
+        <li>|</li>
+        <li><a href="#">eBook</a></li>
+        <li>|</li>
+        <li><a href="#">sam</a></li>
+        <li>|</li>
+        <li><a href="#">핫트랙스</a></li>
+        <li>|</li>
+        <li><a href="#">교보only</a></li>
+      </ul>
+    </div>
+    <div id="md_commend-list"></div>
+    <div id="AD">
+      <a href="#"><img src="img/ad3.png" alt="광고" /></a>
+      <a href="#"><img src="img/ad4.png" alt="광고" /></a>
+    </div>
+    <div id="Ai_recommed_wrap">
+      <div id="Ai_recommed">
+        <h2>AI추천<br />PICKS</h2>
+        <p>
+          발견의 기쁨을 선물합니다<br />
+          취향을 분석해 꼭 맞는 책을 <br />추천해 드릴게요!
+        </p>
+        <button id="login_reco">
+          <a href="#"><p>로그인하고 더 많은 추천 받기</p></a>
+        </button>
+      </div>
+
+      <div id="ai_pick-list"></div>
+    </div>
+    <div id="kyobo_best_background">
+      <div id="kyobo_best_wrap">
+        <div id="bestthe">
+          <h2>베스트</h2>
+          <p>더보기+</p>
+        </div>
+        <div id="kyobo_list">
+          <ul>
+            <li><a class="blue" href="#">전체</a></li>
+            <li><a href="#">국내도서</a></li>
+            <li><a href="#">외국도서</a></li>
+            <li><a href="#">eBook</a></li>
+            <li><a href="#">sam</a></li>
+            <li><a href="#">핫트랙스</a></li>
+            <li><a href="#">교보only</a></li>
+          </ul>
+          <div id="stady">
+            <ul>
+              <li><a class="bold" href="#">스테디셀러</a></li>
+              <li><a href="#">외국도서</a></li>
+              <li><a href="#">국내도서</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div id="best_list"></div>
+      <div id="best_list_2"></div>
+    </div>
+
+    <div id="people">
+      <h2>사람들이 많이 찾고있어요</h2>
+    </div>
+    <div id="peoples-list"></div>
+    <!--
+    <div id="limitation">
+      <h2>교보문고에서만 만날 수 있어요</h2>
+      <div id="Pronunciation"></div>
+    </div>
+-->
+    <div id="AD_1">
+      <a href="#"><img src="img/ad5.jpg" alt="광고" /></a>
+    </div>
+
+    <div id="kyobo_made">
+      <h2>교보문고가 만들었어요</h2>
+    </div>
+    <div id="kyobomade-list"></div>
+
+    <div id="kyobo_pod">
+      <h2>바로출판 POD</h2>
+    </div>
+    <div id="kyobo_pod-list"></div>
+    <div id="Casting">
+      <h2>CASTing</h2>
+      <div id="event"></div>
+    </div>
+    <script>
+      const sliderWrap = document.querySelector(".sliderwrap");
+      const slides = document.querySelectorAll(".sliderwrap li");
+      const totalSlides = slides.length;
+
+      let currentSlide = 0;
+      let isTransitioning = false;
+
+      const firstSlideClone = slides[0].cloneNode(true);
+      sliderWrap.appendChild(firstSlideClone);
+
+      function moveMainSlide(index) {
+        sliderWrap.style.transition = "transform 0.5s ease-in-out";
+        sliderWrap.style.transform = `translateX(${-890 * index}px)`;
+      }
+
+      function nextMainSlide() {
+        if (isTransitioning) return;
+        isTransitioning = true;
+
+        currentSlide++;
+        moveMainSlide(currentSlide);
+
+        if (currentSlide === totalSlides) {
+          setTimeout(() => {
+            sliderWrap.style.transition = "none";
+            currentSlide = 0;
+            moveMainSlide(currentSlide);
+          }, 500);
+        }
+
+        setTimeout(() => {
+          isTransitioning = false;
+        }, 600);
+      }
+
+      setInterval(nextMainSlide, 5000);
+    </script>
+    <script>
+      const saleList = document.querySelector(".sale-list");
+      const saleItems = document.querySelectorAll(".sale-item");
+      const pageIndicator = document.getElementById("page-indicator");
+      let saleIndex = 0;
+
+      function updateSaleSlide() {
+        saleList.style.transform = `translateX(-${274 * saleIndex}px)`;
+        pageIndicator.textContent = `0${saleIndex + 1} - 0${saleItems.length}`;
+      }
+
+      document.getElementById("prev").addEventListener("click", () => {
+        saleIndex = (saleIndex - 1 + saleItems.length) % saleItems.length;
+        updateSaleSlide();
+      });
+      document.getElementById("next").addEventListener("click", () => {
+        saleIndex = (saleIndex + 1) % saleItems.length;
+        updateSaleSlide();
+      });
+
+      updateSaleSlide();
+    </script>
+  </body>
+</html>
