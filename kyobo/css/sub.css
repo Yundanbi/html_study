@@ -60,19 +60,6 @@ header {
   height: auto;
 }
 
-#logo {
-  width: 180px;
-  height: 66px;
-  float: left;
-  margin: 50px 0 0 120px;
-}
-
-#logo > a > img {
-  margin-top: 50px;
-  width: 100%;
-  height: 100%;
-  margin: 30 0 0 0px;
-}
 * {
   margin: 0;
   padding: 0;
@@ -174,6 +161,31 @@ body {
   gap: 20px;
 }
 
+.benefit {
+  font-size: 12px;
+  background: #e0f7fa;
+  padding: 5px 10px;
+  border-radius: 20px;
+}
+
+#sub-menu ul {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 15px 0;
+  list-style: none;
+  border-bottom: 1px solid #eee;
+}
+
+#sub-menu a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+#sub-menu a.green {
+  color: green;
+}
 .benefit {
   font-size: 12px;
   background: #e0f7fa;
@@ -644,73 +656,75 @@ body > * {
 .recommend-section > h2 > span {
   color: #333;
 }
+
 #bottom-menu-background {
   display: flex;
   background-color: #f8f8f8;
   margin-bottom: 40px;
 }
-
-#bottom-menu {
+#sticky-bar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
+  padding: 12px 20px;
   display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.black {
-  width: 170px;
-  height: 60px;
-  color: white;
-  cursor: pointer;
-  background-color: #666;
-  border: 1px solid #666;
+.tab-menu {
+  display: flex;
+  gap: 20px;
+}
+
+.tab-menu button {
+  background: none;
+  border: none;
   font-size: 16px;
-}
-
-.re {
-  width: 170px;
-  height: 60px;
-  color: #666666;
+  color: #666;
   cursor: pointer;
-  background-color: #f6f6f6;
-  border: 1px solid #d4d4d4;
-  font-size: 16px;
+  padding: 8px 12px;
 }
 
-.qkffh {
-  width: 75px;
-  height: 27px;
+.tab-menu button.active {
+  font-weight: bold;
+  border-bottom: 2px solid #333;
+  color: #000;
+}
+
+.buy-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.buy-info .price {
+  font-size: 16px;
+  color: #e60023;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.buy-info .cart {
+  background-color: #007aff;
+  color: #fff;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.buy-info .buy {
   background-color: #199db3;
-  border: 1px solid #199db3;
-  font-size: 12px;
+  color: #fff;
+  border: none;
+  padding: 8px 14px;
   border-radius: 4px;
-  color: white;
-  margin-top: 15px;
-  margin-right: 7px;
-  margin-left: 5px;
   cursor: pointer;
 }
 
-.cart {
-  width: 75px;
-  height: 27px;
-  background-color: #0080ff;
-  border: 1px solid #0080ff;
-  border-radius: 4px;
-  font-size: 12px;
-  margin-top: 15px;
-  margin-left: 5px;
-  color: white;
-  cursor: pointer;
-}
-#bottom-menu p {
-  margin-left: 400px;
-  margin-top: 14px;
-  color: #ff6666;
-  font-weight: bold;
-}
-#bottom-menu > ul {
-  margin-left: 400px;
-  display: flex;
-  font-weight: bold;
-}
 #vnaahr {
   flex-direction: column;
 }
@@ -865,19 +879,81 @@ body > * {
 }
 
 #people_background {
-  background-color: white;
+  border: 1px solid #ddd;
+  padding: 16px;
+  background-color: #fff;
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
 }
+
 #people {
-  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
 }
-#people > button {
-  width: 235px;
-  height: 48px;
-  margin: 0;
+
+#people button {
+  background: none;
+  border: none;
+  padding: 8px 16px;
+  font-weight: bold;
+  cursor: pointer;
   color: #333;
-  font-size: 16px;
-  background-color: white;
-  border: 1px solid #a1a0a0f6;
+  border-bottom: 2px solid transparent;
+}
+
+#people .leftum {
+  border-bottom: 2px solid #000;
+  color: #000;
+}
+
+#people button:hover {
+  color: #0073e6;
+}
+
+#number {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+#number button {
+  width: 24px;
+  height: 24px;
+  border: 1px solid #ccc;
+  background-color: #f5f5f5;
+  cursor: pointer;
+}
+
+#number input {
+  width: 30px;
+  height: 24px;
+  border: 1px solid #ccc;
+  text-align: center;
+}
+
+#number ul {
+  display: flex;
+  gap: 8px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+#number ul li {
+  color: #999;
+}
+
+#number ul li a {
+  color: #0073e6;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+#number ul li a:hover {
+  text-decoration: underline;
 }
 
 #number .leftum {
@@ -919,15 +995,28 @@ body > * {
 #hanjul > button {
   cursor: pointer;
 }
+
+.review-meta {
+  margin-top: 30px;
+}
+.like {
+  margin-left: 800px;
+}
+
+.review-footer > button {
+  background-color: white;
+  padding: 5px;
+  border: 1px solid #666666;
+}
 #text-review-background {
   display: flex;
   background-color: #f8f8f8;
-
-  #text-review {
-    margin-bottom: 50px;
-    margin-top: 20px;
-  }
 }
+#text-review {
+  margin-bottom: 50px;
+  margin-top: 20px;
+}
+
 #text-review > h2 {
   font-size: 13px;
   font-weight: bold;
@@ -957,6 +1046,105 @@ body > * {
   border: 1px solid #007aff;
   cursor: pointer;
 }
+.average-rating-box {
+  text-align: center;
+  margin: 40px 0 20px;
+  font-family: "Arial", sans-serif;
+}
+
+.average-rating-box p {
+  font-weight: bold;
+  font-size: 23px;
+  color: #333;
+}
+
+.rating-stars {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  margin-top: 10px;
+}
+
+.stars {
+  font-size: 26px;
+  color: #4a90e2;
+  letter-spacing: 5px;
+}
+
+.stars img {
+  width: 218px;
+  height: 38px;
+}
+.score {
+  font-size: 22px;
+  color: #333;
+}
+
+.score strong {
+  font-size: 48px;
+}
+
+.score span {
+  color: #aaa;
+  font-size: 30px;
+}
+
+.rating-controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Arial", sans-serif;
+  border-top: 1px solid #eee;
+  padding-top: 20px;
+  margin-top: 20px;
+}
+
+.sort-filters {
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #666;
+}
+
+.sort-filters a {
+  text-decoration: none;
+  color: #666;
+}
+
+.sort-filters a.active {
+  color: #007aff;
+  font-weight: bold;
+}
+
+.pagination {
+  display: flex;
+  gap: 6px;
+}
+
+.pagination button {
+  padding: 5px 10px;
+  font-size: 14px;
+  border: 1px solid #ddd;
+  background-color: white;
+  color: #888;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.pagination button:disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+}
+
+.pagination .current {
+  background-color: #fff;
+  border: 1px solid #007aff;
+  color: #007aff;
+  font-weight: bold;
+}
+
 @media (max-width: 768px) {
   #main-header {
     flex-direction: column;
@@ -997,6 +1185,150 @@ body > * {
 #book-list {
   display: flex;
 }
+.related-books {
+  border: 1px solid #ddd;
+  padding: 20px;
+  background: #fff;
+  font-family: "Arial", sans-serif;
+}
+
+.related-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 16px;
+  font-size: 14px;
+}
+
+.related-title strong {
+  font-weight: bold;
+}
+
+.related-title a {
+  color: #007acc;
+  text-decoration: none;
+  margin-left: 5px;
+}
+
+.related-title .pagination {
+  color: #999;
+  font-size: 12px;
+}
+
+.book-list {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+}
+
+.book-card {
+  width: 140px;
+  flex-shrink: 0;
+}
+
+.book-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border: 1px solid #ccc;
+  margin-bottom: 8px;
+}
+
+.book-info {
+  font-size: 13px;
+}
+
+.book-title {
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+
+.book-meta {
+  color: #555;
+  margin-bottom: 4px;
+}
+
+.book-rating {
+  color: #1a73e8;
+  margin-bottom: 4px;
+}
+
+.review-count {
+  color: #999;
+  font-size: 12px;
+}
+
+.book-price {
+  font-weight: bold;
+}
+
+.discount {
+  color: #888;
+  font-size: 12px;
+}
+.delivery-info {
+  font-family: "Arial", sans-serif;
+  background: #fff;
+  padding: 20px;
+  border: 1px solid #ddd;
+}
+
+.delivery-info h2 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.tabs {
+  margin-bottom: 10px;
+}
+
+.tabs a {
+  font-size: 14px;
+  color: #007acc;
+  text-decoration: none;
+  margin-right: 10px;
+  font-weight: bold;
+}
+
+.info-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+.info-table th,
+.info-table td {
+  padding: 12px;
+  border: 1px solid #ddd;
+  vertical-align: top;
+}
+
+.info-table th {
+  background: #f9f9f9;
+  width: 120px;
+  text-align: left;
+}
+
+.desc {
+  line-height: 1.6;
+  color: #444;
+  margin-bottom: 10px;
+}
+
+.packing-gallery {
+  display: flex;
+  gap: 10px;
+  overflow-x: auto;
+  padding-top: 10px;
+}
+
+.packing-gallery img {
+  width: 120px;
+  height: 90px;
+  object-fit: cover;
+  border: 1px solid #ccc;
+}
+
 .footer {
   background: #fff;
   padding: 40px 0;

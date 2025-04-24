@@ -10,12 +10,21 @@
     <title>kyobo_sub</title>
   </head>
   <body>
+    <div id="top-banner">
+      <div class="banner-left"></div>
+      <div class="banner-right">
+        <a href="#">회원가입</a> | <a href="#">로그인</a> |
+        <a href="#">회원혜택 ▼</a> | <a href="#">주문배송</a> |
+        <a href="#">매장안내</a> | <a href="#">고객센터</a>
+      </div>
+    </div>
+
     <nav id="main-top-menu">
       <ul>
-        <li><a class="kyobo" href="#">교보문고</a></li>
-        <li><a class="ebook" href="#">eBook</a></li>
-        <li><a class="sam" href="#">sam</a></li>
-        <li><a class="hottracks" href="#">핫트랙스</a></li>
+        <li><a href="#">교보문고</a></li>
+        <li><a href="#">eBook</a></li>
+        <li><a href="#">sam</a></li>
+        <li><a href="#">핫트랙스</a></li>
         <li><a href="#">스토리</a></li>
         <li><a href="#">브랜드 더보기 ▼</a></li>
       </ul>
@@ -231,15 +240,16 @@
           </div>
         </div>
 
-        <div id="bottom-menu-background">
-          <div id="bottom-menu">
-            <button class="black">도서정보</button>
-            <button class="re">리뷰/한줄평</button>
-            <button class="re">배송/반품/교환</button>
-            <p>13,050원</p>
+        <div id="sticky-bar">
+          <div class="tab-menu">
+            <button>도서정보</button>
+            <button>리뷰/한줄평</button>
+            <button>배송/반품/교환</button>
+          </div>
+          <div class="buy-info">
+            <p class="price">13,050원</p>
             <button class="cart">카트에 넣기</button>
-            <button class="qkffh">바로구매</button>
-            <hr class="footer-divider" />
+            <button class="buy">바로구매</button>
           </div>
         </div>
 
@@ -415,7 +425,39 @@
               </ul>
             </div>
           </div>
+
+          <!-- 🔽 요 아래에 리뷰 목록 추가하면 돼! 🔽 -->
+          <div class="review-list">
+            <div class="review-item">
+              <div class="review-meta">
+                <span class="badge">종이책</span>
+                <strong class="title">한강 소설, 흰</strong>
+                <span class="writer">s*****5</span>
+                <span class="date">2025-04-08</span>
+                <a href="#" class="report">신고</a>
+              </div>
+              <div class="stars_1"><img src="img/star4.5.png" /></div>
+              <div class="review-content">
+                한강 작가가 2016년에 발표한 소설 '흰 '은 독특한 구성의
+                소설이었다. 에세이, 연작 시라고도 볼 수 있을 것 같다. 제목이
+                있고 그 아래 한 페이지에서 길어야 세 페이지가 안되게 썼는데 '흰
+                '이라는 주제가 담긴 다양한 이야기를 담았다. 맨 첫 장에는
+                작가에게 떠오르는'흰 ' 것에 대한 목록이 있다. 거기에는강보,
+                배내옷, 소금, 눈, 얼음, 달, 쌀, 파도 등이 있었다. 그러고 보면
+                한강 소설에는 눈처럼 하얀 이미지가 많았던 것 같다...
+                <a href="#" class="more">더보기</a>
+              </div>
+              <div class="review-footer">
+                <span>이 리뷰가 도움이 되었나요?</span>
+                <button class="like">♡ 0</button>
+                <button class="comment">댓글 0</button>
+              </div>
+            </div>
+
+            <!-- 리뷰 반복 추가 가능 -->
+          </div>
         </div>
+
         <div id="hanjul">
           <h2>한줄평(4건)</h2>
           <p>
@@ -443,6 +485,65 @@
             <button>등록</button>
           </div>
         </div>
+        <div class="average-rating-box">
+          <p><strong>4</strong>명의 예스24 회원이 평가한 평균별점</p>
+          <div class="rating-stars">
+            <div class="stars"><img src="img/star4.5.png" /></div>
+            <div class="score"><strong>9.5</strong> <span>/ 10.0</span></div>
+          </div>
+        </div>
+
+        <div class="rating-controls">
+          <div class="sort-filters">
+            <label><input type="checkbox" checked /> 구매 한줄평</label>
+            <span>|</span>
+            <a href="#">최근순</a>
+            <span>|</span>
+            <a href="#" class="active">추천순</a>
+            <span>|</span>
+            <a href="#">별점순</a>
+          </div>
+        </div>
+        <div class="delivery-info">
+          <h2>배송/반품/교환 안내</h2>
+          <div class="tabs">
+            <a href="#" class="active">배송 안내</a>
+            <!-- 필요한 경우 다른 탭도 추가 가능 -->
+          </div>
+
+          <table class="info-table">
+            <tr>
+              <th>배송 구분</th>
+              <td>
+                예스24 배송<br />
+                · 배송비 : 2,500원
+              </td>
+            </tr>
+            <tr>
+              <th>포장 안내</th>
+              <td>
+                <p class="desc">
+                  <strong
+                    >안전하고 정확한 포장을 위해 CCTV를 설치하여 운영하고
+                    있습니다.</strong
+                  ><br />
+                  고객님께 배송되는 모든 상품을 CCTV로 녹화하고 있으며, 철저한
+                  모니터링을 통해 작업 과정에 문제가 없도록 최선을 다
+                  하겠습니다.<br />
+                  <b>목적 :</b> 안전한 포장 관리<br />
+                  <b>촬영범위 :</b> 박스 포장 작업
+                </p>
+                <div class="packing-gallery">
+                  <img src="img/rap1.jpg" alt="포장1" />
+                  <img src="img/rap2.jpg" alt="포장2" />
+                  <img src="img/rap3.jpg" alt="포장3" />
+                  <img src="img/rap4.jpg" alt="포장4" />
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+
         <script>
           document.querySelector(".prev").onclick = () => {
             bookList.scrollBy({ left: -300, behavior: "smooth" });
