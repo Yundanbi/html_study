@@ -1,13 +1,247 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+body {
+  font-family: "Noto Sans KR", sans-serif;
+  background-color: #fff;
+  color: #333;
+  line-height: 1.6;
+}
+
+.coupon-banner {
+  background-color: #800080;
+  color: white;
+  text-align: center;
+  padding: 12px 0;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+#banner {
+  background-color: white;
+  width: 100%;
+  max-width: 1050px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.login {
+  display: flex;
+  justify-content: flex-end;
+  padding: 20px 10px;
+  width: 1050px;
+}
+
+.login ul {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  list-style: none;
+  padding: 0;
+}
+
+.login li {
+  font-size: 12px;
+  color: #333333;
+}
+
+.login a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.login {
+  display: flex;
+  justify-content: flex-end;
+  padding: 20px 10px;
+  width: 1050px;
+}
+
+.login ul {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  list-style: none;
+  padding: 0;
+}
+
+.login li {
+  font-size: 12px;
+  color: #333333;
+}
+
+.login a {
+  text-decoration: none;
+  color: inherit;
+}
+
+#middle-banner {
+  background-color: white;
+  width: 100%;
+
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+#middle-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+#left-box {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.logo {
+  width: 82px;
+  height: 43px;
+  background-image: url("../public/img/logo.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.logo_right_name {
+  display: flex;
+}
+
+.logo_right_name ul {
+  display: flex;
+  gap: 10px;
+  font-size: 18px;
+  color: #b5b5b5;
+}
+
+.purple {
+  color: rgb(95, 0, 128);
+}
+
+.search {
+  position: relative;
+  width: 400px;
+  display: flex;
+  align-items: center;
+}
+
+.search input {
+  width: 100%;
+  padding: 8px 40px 8px 12px;
+  border: 1px solid rgb(95, 0, 128);
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.search button {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.search button img {
+  width: 30px;
+  height: 30px;
+}
+
+#login_img {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+#login_img > a > img {
+  width: 30px;
+  height: 30px;
+}
+.kurly-navbar {
+  background-color: white;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+  padding: 12px 0;
+}
+.kurly-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1050px;
+  margin: 0 auto;
+}
+
+.navbar-left {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.navbar-center .center-menu {
+  display: flex;
+  gap: 30px;
+  font-size: 14px;
+  font-weight: 500;
+  justify-content: center;
+  width: 100%;
+}
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.navbar-right img {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+}
+
+.delivery-button {
+  border: 1px solid rgb(95, 0, 128);
+  background-color: white;
+  color: rgb(95, 0, 128);
+  border-radius: 20px;
+  padding: 4px 10px;
+  font-size: 12px;
+  cursor: pointer;
+}
+.product-box {
+  padding: 20px;
+  border: 1px solid #ddd;
+  width: 320px;
+  margin: 20px auto;
+  text-align: center;
 }
