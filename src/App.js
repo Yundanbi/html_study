@@ -141,6 +141,22 @@ function App() {
                 alt="slide5"
               />
             </Carousel.Item>
+
+            <Carousel.Item>
+              <img
+                className="d-block w-100"
+                src="img/slider/6.png"
+                alt="slide5"
+              />
+            </Carousel.Item>
+
+            <Carousel.Item>
+              <img
+                className="d-block w-100"
+                src="img/slider/7.png"
+                alt="slide5"
+              />
+            </Carousel.Item>
           </Carousel>
         </div>
 
